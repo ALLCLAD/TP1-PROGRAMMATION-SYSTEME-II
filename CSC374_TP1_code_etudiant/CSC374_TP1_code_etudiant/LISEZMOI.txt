@@ -1,0 +1,15 @@
+CSC 374 Programmation Systèmes II, TP1 : Cache Lab (dossier distribué aux étudiants)
+==================================================================================
+
+Lire d'abord l'énoncé, CSC374_TP1_Enonce.docx. Environnement : Linux (Ubuntu 24.04),
+gcc, valgrind, Python 3.
+
+  chmod +x csim-ref          si le dossier a transité par Windows
+  make csim                  compile le simulateur (partie A)
+  python3 test-csim.py       évalue la partie A (8 points)
+  python3 test-trans.py      évalue la partie B (9 points) ; -v garde les traces
+  make fuites                vérifie l'absence de fuite mémoire de csim
+  make remise                produit l'archive à déposer
+
+Fichiers à modifier : csim.c, trans.c (et rapport.pdf à ajouter).
+Ne pas modifier : cachelab.c, cachelab.h, tracegen.c, csim-ref, test-*.py, traces/, outils/.
